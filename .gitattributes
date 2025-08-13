@@ -1,0 +1,17 @@
+# --- Unity WebGL build artifacts (track with LFS) ---
+# Newer Unity (compression: .unityweb)
+Build/*.data.unityweb filter=lfs diff=lfs merge=lfs -text
+Build/*.wasm.unityweb filter=lfs diff=lfs merge=lfs -text
+Build/*.framework.js.unityweb filter=lfs diff=lfs merge=lfs -text
+
+# Older/other variants (keep these for safety)
+Build/*.data      filter=lfs diff=lfs merge=lfs -text
+Build/*.wasm      filter=lfs diff=lfs merge=lfs -text
+Build/*.mem       filter=lfs diff=lfs merge=lfs -text
+Build/*.symbols.json filter=lfs diff=lfs merge=lfs -text
+Build/*.br        filter=lfs diff=lfs merge=lfs -text
+Build/*.gz        filter=lfs diff=lfs merge=lfs -text
+
+# If you export to a different folder name, duplicate rules accordingly
+# StreamingAssets can also hold big files:
+StreamingAssets/** filter=lfs diff=lfs merge=lfs -text
