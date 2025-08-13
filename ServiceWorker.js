@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Web Cube AR-0.1";
 const contentToCache = [
-    "Build/Web AR U6 Video.loader.js",
-    "Build/Web AR U6 Video.framework.js",
-    "Build/Web AR U6 Video.data",
-    "Build/Web AR U6 Video.wasm",
+    "Build/Ertqa.loader.js",
+    "Build/Ertqa.framework.js",
+    "Build/Ertqa.data",
+    "Build/Ertqa.wasm",
     "TemplateData/style.css"
 
 ];
